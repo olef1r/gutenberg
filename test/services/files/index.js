@@ -8,7 +8,7 @@ describe('files - Service', () => {
     expect(filesService).to.be.not.undefined;
   });
 
-  it('should be able read dirs', async () => {
+  it('should be able to read dirs', async () => {
     const lstatStub = sinon.stub().resolves('fake data');
     const utilStub = { promisify: sinon.stub().callsFake(() => lstatStub) };
     proxyquire('../../../src/services/files/index', {
