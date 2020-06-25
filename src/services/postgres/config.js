@@ -1,7 +1,7 @@
-const  Sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 require('dotenv').config();
 
-module.exports=  {
+module.exports = {
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: 'gutenberg',

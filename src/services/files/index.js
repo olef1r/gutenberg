@@ -31,15 +31,15 @@ async function readFile(path, dir) {
     .on('data', (file) => {
       parserService.saveData(file.toString());
     })
-    .on('error',function (err) {
-      console.log(`Error ${err} in read file stream`)
+    .on('error', function (err) {
+      console.log(`Error ${err} in read file stream`);
     })
     .on('end', function () {
       console.log('All the data in the file has been read');
     })
     .on('close', function () {
       console.log('Stream has been destroyed and file has been closed');
-    })
+    });
 }
 
 export default {
