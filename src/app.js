@@ -4,7 +4,7 @@ import postgres from './services/postgres';
 import filesService from './services/files';
 
 const app = express();
-const PATH = '../../Documents/rdf-files/cache/ep';
+const PATH = '../../Documents/rdf-files/cache/epub';
 
 function onServicesReady() {
   app.set('port', process.env.PORT);

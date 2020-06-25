@@ -4,6 +4,7 @@
 - \$`npm run db:create`
 - \$`npm run db:migrate`
   (For Windows) change `db:migrate` script in package.json to this - `./node_modules/.bin/babel-node node_modules/sequelize-cli/lib/sequelize db:migrate`
+- \$`Add path to dir epub in app.js file`
 - \$`npm run dev`
 - Application is running on `localhost:3000`
 
